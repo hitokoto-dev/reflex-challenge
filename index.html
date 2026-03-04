@@ -237,9 +237,13 @@
   .speed-label {
     position: absolute; bottom: 8px; left: 50%;
     transform: translateX(-50%); color: var(--dim); font-size: 0.75rem;
-  }
-.name-input-area .btn { padding: 12px 20px; font-size: 1rem; flex-shrink: 0; white-space: nowrap; }
-    </style>
+  }    
+/* Mobile save button fix */
+.name-input-area { max-width: min(300px, calc(100vw - 40px)); }
+.name-input-area input { min-width: 0; }
+.name-input-area .btn { padding: 10px 16px; font-size: 0.9rem; flex: none; }
+
+</style>
 </head>
 <body>
 
